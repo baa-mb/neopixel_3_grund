@@ -33,9 +33,10 @@ basic.showLeds(`
     . . . . .
     . . . . .
     `)
+strip = neopixel.create(DigitalPin.P0, 3, NeoPixelMode.RGB)
+let phase_kurz = 2000
+let phase_lang = 5000
 basic.forever(function () {
-    let phase_kurz = 0
-    let phase_lang = 0
     rot(1)
     basic.pause(phase_lang)
     gelb(1)
