@@ -26,11 +26,16 @@ function grün_blink (num: number) {
     }
 }
 let strip: neopixel.Strip = null
-strip = neopixel.create(DigitalPin.P0, 3, NeoPixelMode.RGB)
-let dauerlauf = 1
-let phase_lang = 5000
-let phase_kurz = 2000
+basic.showLeds(`
+    . . . . .
+    . . . . .
+    . . # . .
+    . . . . .
+    . . . . .
+    `)
 basic.forever(function () {
+    let phase_kurz = 0
+    let phase_lang = 0
     rot(1)
     basic.pause(phase_lang)
     gelb(1)
