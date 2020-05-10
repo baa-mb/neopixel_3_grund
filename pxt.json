@@ -1,5 +1,5 @@
 {
-    "name": "neopixel_3_ampel",
+    "name": "neopixel_3_grund",
     "description": "",
     "dependencies": {
         "core": "*",
